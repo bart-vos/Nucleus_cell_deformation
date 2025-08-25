@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nucleus_cell_deformation"
+version = "1.0.0"
+dependencies = [
+	"numpy",
+	"matplotlib",
+	"seaborn",
+]
+authors = [
+		{ name="Bart Vos", email="bart.vos@phys.uni-goettingen.de" },
+]
+description = "Analysis for cellular and nuclear shape change."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.10"
+classifiers = [
+		"Programming Language :: Python :: 3",
+		"License :: OSI Approved :: MIT License",
+		"Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/bart-vos/Nucleus_cell_deformation"
+
+# build configuration
+[tool.setuptools.packages.find]
+where = ["src"]
